@@ -1,0 +1,246 @@
+    /* ==============Fonts===================  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+
+
+/*===============Basic style============== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f5f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    color: burlywood;
+}
+
+/* ============NavBar============== */
+nav {
+    width: 100%;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    
+
+}
+
+li {
+    color: white;
+    padding: 10px 20px;
+   
+}
+
+.menu a{
+    opacity: .6;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+
+}
+nav li a:hover{
+    opacity: 1;
+}
+.name {
+
+    margin-right: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.name a{
+    color: #5bc0de;
+    
+}
+
+
+
+
+
+/* =============jumbotron========== */
+
+.jumbotron {
+    background: url("images/Train.jpg") no-repeat ;
+    background-position:right;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+.profile-img img {
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 10%;
+    transition: all .4s;
+}
+
+.profile-img img:hover {
+    transform: scale(1.2) rotate(-25deg);
+}
+
+
+.intro {
+   
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro h1 {
+    color: #f0ad4e;
+    background-color: #292b2cd3;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+}
+
+.intro p {
+    background-color: #5cb85c;
+    color: #f7f7f7;
+    margin-top: -1px;
+    padding: 5px 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* ===========Card============= */
+
+
+
+.card {
+    padding: 20px 40px 40px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 5px solid rgb(151, 146, 146);
+    transition: all .4s;
+    text-align: left;
+
+
+}
+
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.skills ul li:nth-child(odd){
+   background-color: #d9534f;
+   margin: 12px;
+
+}
+.skills ul li:nth-child(even){
+   background-color: #5bc0de;
+   margin: 12px;
+}
+
+/* =============================footer========================= */
+
+footer {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+}
+
+.social:hover {
+    opacity: 1;
+}
+
+.github {
+    background: url("images/github.svg") no-repeat;
+}
+
+.twitter {
+    background: url("images/twitter.svg") no-repeat;
+}
+
+.linkdin {
+    background: url("images/linkedin.svg") no-repeat;
+}
+
+.card:hover {
+    border-bottom: 5px solid hotpink;
+}
+
+
+ /* Experience HTML  */
+.container{
+    margin-top: 175px;
+ }
+ .experience-card{
+    padding: 20px 40px 40px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 5px solid rgb(151, 146, 146);
+    transition: all .4s;
+    text-align: left;
+    max-width: 900px;
+ }
+.experience-card:hover{
+    border-bottom: 5px solid coral;
+}
+
+@media (min-width:720px) {
+    ul {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+    .jumbotron{
+        min-height: 500px;
+    }
+    .flex {
+        display: flex;
+
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+    .experience-card{
+      margin: 0 auto;
+    }
+}
